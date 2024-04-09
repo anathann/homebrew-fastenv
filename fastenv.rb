@@ -8,7 +8,11 @@ class Fastenv < Formula
   def install
     bin.install "fastenv"
   end
-
+  
+  bottle do
+    sha256 cellar: :any, catalina: "a2243c1e71a57d164913f2047b6292fdd3accb67d729a25ea2163081caed6cdd"
+  end
+  
   test do
   end
 end
